@@ -51,7 +51,7 @@ class DialogsLevel2Activity : AppCompatActivity() {
                 .setCancelable(true)
                 .setTitle(R.string.volume_setup)
                 .setMessage(R.string.volume_setup_message)
-                .setView(dialogBinding.root)
+                .setView(dialogBinding.root) //is able to put into dialog any view
                 .setPositiveButton(R.string.action_confirm) { _, _ ->
                     volume = dialogBinding.volumeSeekBar.progress
                     updateUi()
